@@ -1,4 +1,4 @@
-# AnkuluaAutoCompleting
+# Ankulua Auto Completing
 
 This is a ankulua basic auto completing code for those who are using intellij IDEA , this template shows the completion popup as you type, so you can fill in long words by typing only a few characters
 
