@@ -227,13 +227,13 @@
       <option name="LUA" value="true" />
     </context>
   </template>
-  <template name="setCompareDimension" value="Settings:setCompareDimension(true, $V$)$END$" description="Settings:setCompareDimension(boolean compareByWidth, int pixels)" toReformat="false" toShortenFQNames="true">
+  <template name="Settings:CompareDimension" value="Settings:setCompareDimension(true, $V$)$END$" description="Settings:setCompareDimension(boolean compareByWidth, int pixels)" toReformat="false" toShortenFQNames="true">
     <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA" value="true" />
     </context>
   </template>
-  <template name="setScriptDimension" value="Settings:setScriptDimension(true, $V$)$END$" description="Settings:setScriptDimension(boolean compareByWidth, int pixels)" toReformat="false" toShortenFQNames="true">
+  <template name="Settings:setScriptDimension" value="Settings:setScriptDimension(true, $V$)$END$" description="Settings:setScriptDimension(boolean compareByWidth, int pixels)" toReformat="false" toShortenFQNames="true">
     <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA" value="true" />
@@ -261,7 +261,7 @@
       <option name="LUA" value="true" />
     </context>
   </template>
-  <template name="setAutoWaitTimeout" value="Settings:set(&quot;AutoWaitTimeout&quot;,$V$)$END$" description="Settings:set(AutoWaitTimeout , double value)" toReformat="false" toShortenFQNames="true">
+  <template name="Settings:SET_AutoWaitTimeout" value="Settings:set(&quot;AutoWaitTimeout&quot;,$V$)$END$" description="Settings:set(AutoWaitTimeout , double value)" toReformat="true" toShortenFQNames="true">
     <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA" value="true" />
@@ -289,7 +289,7 @@
       <option name="LUA" value="true" />
     </context>
   </template>
-  <template name="snapSet" value="Settings:snapSet($V$)$END$" description="Settings:snapSet(String var, boolean value)" toReformat="false" toShortenFQNames="true">
+  <template name="addTextView" value="addTextView(&quot;$V$&quot;)$END$" description="addTextView(String)" toReformat="true" toShortenFQNames="true">
     <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA" value="true" />
@@ -413,7 +413,7 @@
       <option name="LUA" value="true" />
     </context>
   </template>
-  <template name="setMinSimilarity" value="Setting:set(&quot;MinSimilarity&quot;,$V$)$END$" description="Settings:set(MinSimilarity)" toReformat="false" toShortenFQNames="true">
+  <template name="Settings:SET_MinSimilarity" value="Setting:set(&quot;MinSimilarity&quot;,$V$)$END$" description="Settings:set(MinSimilarity, double value)" toReformat="true" toShortenFQNames="true">
     <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA" value="true" />
@@ -727,6 +727,193 @@
   </template>
   <template name="randomNumer" value="randomNumer($V1$)$END$" description="randomNumer(value)" toReformat="false" toShortenFQNames="true">
     <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="saveColor" value="saveColor($V$)$END$" description="saveColor(fileName)" toReformat="true" toShortenFQNames="true">
+    <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="getCountry" value="getCountry()$END$" description="getCountry()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="getIMEI" value="getIMEI()$END$" description="getIMEI()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="setHighlightTextStyle" value="setHighlightTextStyle($V1$,$V2$,$V3$)$END$" description="setHighlightTextStyle (bgColor, textColor, textSize)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="setHighlightStyle" value="setHighlightStyle($V1$,$V2$)$END$" description="setHighlightStyle (color, fill)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="autoGameArea" value="autoGameArea($V$)$END$" description="autoGameArea(enable)" toReformat="true" toShortenFQNames="true">
+    <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="getGameArea" value="getGameArea()$END$" description="getGameArea()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="setGameArea" value="setGameArea($V1$)$END$" description="setGameArea(Region region)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="Settings:setROI" value="Settings:setROI($V$)$END$" description="Settings:setROI(Region reg)" toReformat="true" toShortenFQNames="true">
+    <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="Settings:getROI()" value="Settings:getROI()$END$" description="Settings:getROI()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="Settings:GET_MinSimilarity" value="Setting:get(&quot;MinSimilarity&quot;)$END$" description="Settings:get(MinSimilarity)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="Settings:GET_AutoWaitTimeout" value="Settings:get(&quot;AutoWaitTimeout&quot;)$END$" description="Settings:get(AutoWaitTimeout )" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="snapshot" value="snapshot()$END$" description="snapshot()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="snapshotColor" value="snapshotColor()$END$" description="snapshotColor()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="addEditPassword" value="addEditPassword(&quot;$V$&quot;,&quot;$V2$&quot;)$END$" description="addEditPassword(String argument, String defaultValue)" toReformat="true" toShortenFQNames="true">
+    <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="addRelativeRadioGroup" value="addRelativeRadioGroup(&quot;$v1$&quot;,$v2$,$v3$)$END$" description="addRelativeRadioGroup(String argument, integer defaultIndex, integer maxColumn)" toReformat="true" toShortenFQNames="true">
+    <variable name="v1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="v2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="v3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="addRelativeRadioGroupNewRow" value="addRelativeRadioGroupNewRow()$END$" description="addRelativeRadioGroupNewRow()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="addSpinnerIndex" value="addSpinnerIndex($V1$, $V2$, $V3$)$END$" description="addSpinnerIndex(String argument, Table of String, integer defaultValue)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="dialogShowFullScreen" value="dialogShowFullScreen($V$)$END$" description="dialogShowFullScreen(String title)" toReformat="true" toShortenFQNames="true">
+    <variable name="V" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="preferenceGetBoolean" value="preferenceGetBoolean($V1$,$V2$)$END$" description="preferenceGetBoolean(String arg, Boolean value)" toReformat="false" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="getTouchEvent" value="getTouchEvent()$END$" description="getTouchEvent()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="setTouchEventStyle" value="setTouchEventStyle($V1$)$END$" description="setTouchEventStyle(color)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="typeOf" value="typeOf($V1$)$END$" description="typeOf(variable)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="unzip" value="unzip($V1$,$V2$,$V3$)$END$" description="unzip(String fileName[, String directory [, String encoding])" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="isRecoveredFromKilled" value="isRecoveredFromKilled()$END$" description="isRecoveredFromKilled()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="setRecoveredFromKilled" value="setRecoveredFromKilled()$END$" description="setRecoveredFromKilled()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="halfCompareDimension" value="halfCompareDimension()$END$" description="halfCompareDimension()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="setHttpTimeout" value="setHttpTimeout($V1$)$END$" description="setHttpTimeout(Int seconds)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="httpPost" value="httpPost($V1$,$V2$)$END$" description="httpPost(String url, Table param)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="sendEmail" value="sendEmail($V1$,$V2$)$END$" description="sendEmail(String subject, String message)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA" value="true" />
+    </context>
+  </template>
+  <template name="setExceptionEmail" value="setExceptionEmail($V1$,$V2$)$END$" description="setExceptionEmail(String subject, String message)" toReformat="true" toShortenFQNames="true">
+    <variable name="V1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="V2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA" value="true" />
     </context>
